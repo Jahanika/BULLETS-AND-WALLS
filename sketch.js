@@ -8,7 +8,7 @@ function setup() {
   speed=random(223,321);
   weight=random(30,52);
 
-  wall=createSprite(1200,200,thickess,height/2);
+  wall=createSprite(1200,200,thickness,height/2);
   wall.shapeColor=color(80,80,80)
 }
 function draw() {
