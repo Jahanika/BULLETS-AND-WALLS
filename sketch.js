@@ -14,16 +14,6 @@ function setup() {
 function draw() {
   background(255,255,255);  
   drawSprites();
-}
-function hasCollided(lbullet,lwall)
-{
-  bulletRightEdge=lbullet.x + lbullet.width;
-  wallLeftEdge=lwall.x;
-  if(bulletRightEdge>=wallLeftEdge)
-  {
-    return true 
-  }
-  return false
 
   if(hasCollided(bullet,wall))
   {
@@ -38,4 +28,16 @@ function hasCollided(lbullet,lwall)
   {
     wall.shapeColor=color(0,255,0)
   }
+}
+function hasCollided(lbullet,lwall)
+{
+  bulletRightEdge=lbullet.x + lbullet.width;
+  wallLeftEdge=lwall.x;
+  if(bulletRightEdge>=wallLeftEdge)
+  {
+    return true 
+  }
+  return false
+
+  
 }
